@@ -28,7 +28,7 @@ function makeAPICall( value ) {
     $( "#results" ).html( "<p>Loading</p>" );
     $( ".output").show();
     $.ajax({
-        url: "http://anup-patel.com/phpapi/api.php",
+        url: "http://127.0.0.1/api.php",
         data: { "type": "getPrimeNumbers", "value": value },
         error: function() {
             $( "#results" ).html( "<p>An error has occurred</p>" );
